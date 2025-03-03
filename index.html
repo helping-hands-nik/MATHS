@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Candidate Registration Form</h2>
+        <form id="registrationForm" enctype="multipart/form-data">
+            
+            <label for="name">Candidate Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="fatherName">Father's Name:</label>
+            <input type="text" id="fatherName" name="fatherName" required>
+
+            <label for="motherName">Mother's Name:</label>
+            <input type="text" id="motherName" name="motherName" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="image">Candidate Image:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+
+            <label for="certificates">Certificates (PDF/Images):</label>
+            <input type="file" id="certificates" name="certificates" accept=".pdf, image/*" multiple required>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+        <p id="successMessage" style="display: none; color: green;">Form submitted successfully!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
